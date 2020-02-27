@@ -1,0 +1,88 @@
+/*------------------------------------ Inicio animacion con efecto desvanecer ---------------------------------*/
+.fadeIn {
+  /* animation-duration: 4s; Tiempo que dura la animacion  */
+  animation-duration: 4s;
+  /* animation-fill-mode: both; Hace que la animacion se cumpla tanto de ida como de regreso */
+  animation-fill-mode: both;
+  /* animation-name: fadeIn; define el nombre o identificador con el que se crea el nexo con el keyframe */
+  animation-name: fadeIn;
+
+  /* se coloca -webkit- para que los navegadores se acoplen a los efectos, solo se duplica la linea con este valor al inicio */
+  -webkit-animation-duration: 4s;
+  -webkit-animation-fill-mode: both;
+  -webkit-animation-name: fadeIn;
+}
+
+@keyframes fadeIn {
+  /* from desde to hasta, la animacion hace un efecto desde hasta segun lo que definamos */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*---------------------------------- Fin animacion con efecto desvanecer -----------------------------------*/
+
+/*---------------------------------- inicio de animacion que aparece desde arriba -------------------------- */
+
+.fadeInDown {
+  /* animation-duration: 4s; Tiempo que dura la animacion  */
+  animation-duration: 1s;
+  /* animation-fill-mode: both; Hace que la animacion se cumpla tanto de ida como de regreso */
+  animation-fill-mode: both;
+  /* animation-name: fadeIn; define el nombre o identificador con el que se crea el nexo con el keyframe */
+  animation-name: fadeInDown;
+
+  /* se coloca -webkit- para que los navegadores se acoplen a los efectos, solo se duplica la linea con este valor al inicio */
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  -webkit-animation-name: fadeInDown;
+}
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    /* transform nos ayuda a animar elementos de css, translate nos da el efecto de transición 
+    los valores (0,-100%,0) indica que vaya desde arriba hasta abajo, luego en to, 
+    colocamos (0,0,0) para que vaya a su posicion original*/
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+/*---------------------------------- fin de animacion que aparece desde arriba -------------------------- */
+
+/*---------------------------------- inicio de animacion que aparece desde abajo -------------------------- */
+.fadeInUp {
+  /* animation-duration: 4s; Tiempo que dura la animacion  */
+  animation-duration: 1s;
+  /* animation-fill-mode: both; Hace que la animacion se cumpla tanto de ida como de regreso */
+  animation-fill-mode: both;
+  /* animation-name: fadeIn; define el nombre o identificador con el que se crea el nexo con el keyframe */
+  animation-name: fadeInUp;
+
+  /* se coloca -webkit- para que los navegadores se acoplen a los efectos, solo se duplica la linea con este valor al inicio */
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  -webkit-animation-name: fadeInUp;
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    /* transform nos ayuda a animar elementos de css, translate nos da el efecto de transición 
+    los valores (0,-100%,0) indica que vaya desde arriba hasta abajo, luego en to, 
+    colocamos (0,0,0) para que vaya a su posicion original*/
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+/*---------------------------------- fin de animacion que aparece desde abajo -------------------------- */

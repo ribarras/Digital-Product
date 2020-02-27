@@ -1,0 +1,217 @@
+/* ----------------- Inicio variables  */
+:root {
+  /* COLORES  */
+  --green-color: #7acc2d;
+  --black-color: #313337;
+  --white-color: white;
+  /* TIPOGRAFIA  */
+  --normal: 12px;
+  /* ESPACIADO */
+  --space: 10px;
+  --space-2: 20px;
+  /* BOX SHADOW */
+  --box: 0px 0 2px 1px #e6e5e9;
+}
+/* ----------------- Fin variables  */
+
+/* ----------------------- General -----------------------  */
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  font-size: 12px;
+  font-family: Helvetica;
+  height: 84vh;
+}
+p,
+label {
+  font-size: var(--normal);
+}
+/* -------------------------- Nav Bar -------------------------  */
+nav {
+  display: flex;
+  background-color: #7acc2d;
+  padding: 10px;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+}
+nav li {
+  padding-left: 20px;
+  list-style: none;
+}
+nav li a {
+  color: black;
+  text-decoration: none;
+}
+nav li a:hover {
+  color: white;
+}
+
+/* ----------------- Main section ----------------------  */
+.mainSection {
+  padding: 15%;
+  text-align: center;
+}
+/* -------------------- Fin Main Section -------------------------  */
+
+/* ----------------------- Inicio Productos ------------------------  */
+.products {
+  background-image: url("../img/curve.png");
+  padding: 15%;
+  background-position: center top;
+  background-repeat: no-repeat;
+  display: flex;
+  height: 95px;
+  background-size: cover;
+}
+.product {
+  padding: 10px;
+  margin-top: -240px;
+}
+.product .content {
+  background-color: white;
+  padding: 15px;
+  /* box-shadow: 0 0 2px #9ab97c;  sirve para dar efecto de borde sombreado  */
+  box-shadow: 0 0 2px #9ab97c;
+}
+.imgContent {
+  text-align: center;
+}
+.mainButton {
+  background-color: #7acc2d;
+  width: 100%;
+  padding: 10px;
+  font-size: 12px;
+  color: white;
+  border: 0;
+  cursor: pointer;
+  border-radius: 2px;
+}
+.mainButton:hover {
+  background-color: #487122;
+}
+/* ------------------------------Fin Productos --------------------------  */
+/* ---------------------------------Inicio Categorias-----------------------   */
+/* .categories {
+  padding: 8%;
+  display: flex;
+  justify-content: center;
+}
+.category {
+  padding: 40px;
+}
+.category .content {
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+}
+.content {
+  text-align: center;
+}
+.content img {
+  width: 50%;
+  height: 50%;
+} */
+
+.beneficios {
+  padding: 10%;
+  display: flex;
+}
+
+.beneficio {
+  text-align: center;
+  padding: 20px;
+}
+
+.beneficio img {
+  max-height: 100px;
+}
+
+.text_beneficio {
+  text-align: justify;
+}
+/* --------------------------------Fin Categorias--------------------------------  */
+/* --------------------------- Inicio Linea Divisora----------------------------  */
+
+/* ----------------------------- Fin Linea Divisora ------------------------------  */
+/* ------------------------- Inicio Menciones ---------------------------  */
+.mentions {
+  display: flex;
+  padding: 5%;
+}
+.mention img {
+  width: 100%;
+}
+h2.mention_title {
+  text-align: center;
+}
+.mention {
+  padding: 5px;
+}
+.content_mention {
+  box-shadow: 0px 0 2px 1px #e6e5e9;
+}
+.mention .text {
+  padding: 5px;
+}
+/* ------------------------- Fin Menciones ---------------------------  */
+/* <!-- --------------------------Inicio Footer------------------ --> */
+footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  background-color: var(--black-color);
+  padding: 20px;
+  color: white;
+  margin-top: auto;
+}
+/* <!-- --------------------------Inicio Footer------------------ --> */
+/* ------------------------------- Inicio Productos -----------------  */
+.imgcol4__1 {
+  display: flex;
+  margin: auto;
+  height: 230px;
+  width: 230px;
+}
+.row h1 {
+  padding-top: 20px;
+  padding-bottom: 5%;
+}
+.col-8__content1 {
+  padding: 10%;
+  padding-bottom: 5%;
+}
+/* ------------------------------- Inicio Productos -----------------  */
+/* -------------------- Inicio Venta ----------------------  */
+.moduloPago {
+  background-color: var(--white-color);
+  box-shadow: var(--box);
+  padding: var(--space);
+}
+.moduloImagen {
+  max-width: 150px;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+}
+.data {
+  margin-top: var(--space);
+  width: 100%;
+  height: 35px;
+  border-radius: 2px;
+  border: 1px solid var(--black-color);
+  box-sizing: border-box;
+}
+.moduloPago .mainButton {
+  margin-top: 10px;
+}
+.venta__general {
+  height: inherit;
+  margin-top: auto;
+  display: flex;
+}
+/* ----------------------- Fin Venta ----------------------- */
